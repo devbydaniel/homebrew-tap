@@ -5,21 +5,21 @@
 class TtSync < Formula
   desc "Sync server for tt task manager"
   homepage "https://github.com/devbydaniel/tt"
-  version "0.3.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.3.0/tt-sync_0.3.0_darwin_amd64.tar.gz"
-      sha256 "5ec859a0fb0e73dd9ba4bd670bb2fea0be924077e8a043a612f18b013233a9b0"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.4.1/tt-sync_0.4.1_darwin_amd64.tar.gz"
+      sha256 "43e16d3cee7901e352e632af822295c5d7b4eb2ff04d535e044d2c63ff714c3a"
 
       def install
         bin.install "tt-sync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.3.0/tt-sync_0.3.0_darwin_arm64.tar.gz"
-      sha256 "37a1f690445da4cf23ad851125e2356c71a4906ab126c8c98b7f675612ebb246"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.4.1/tt-sync_0.4.1_darwin_arm64.tar.gz"
+      sha256 "32bb3775628c88fc5db4d69efc32ada8b1ad60bb76b63f5547be9a5a7b7c2ac4"
 
       def install
         bin.install "tt-sync"
@@ -29,15 +29,15 @@ class TtSync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.3.0/tt-sync_0.3.0_linux_amd64.tar.gz"
-      sha256 "8b81ca72fdf7e9af5fd17ab9f87fd1a1c8ad3939b3664121932657c0e0f6ebd6"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.4.1/tt-sync_0.4.1_linux_amd64.tar.gz"
+      sha256 "b56997e299fcb5b885d24b34ac0afc5fbb8e68697901c3907c065cb2c4e38c80"
       def install
         bin.install "tt-sync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.3.0/tt-sync_0.3.0_linux_arm64.tar.gz"
-      sha256 "5effa47eff8e754c8c8bbbac4637c127a3ba4fe5b0c4ca495e88af7ad7bd1134"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.4.1/tt-sync_0.4.1_linux_arm64.tar.gz"
+      sha256 "1eb7ba8ad5bdb2547b6ff8d5601878ffbc36bed75dcf9582d081b32cf22aa569"
       def install
         bin.install "tt-sync"
       end
