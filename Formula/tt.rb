@@ -5,21 +5,21 @@
 class Tt < Formula
   desc "A CLI & TUI task manager"
   homepage "https://github.com/devbydaniel/tt"
-  version "0.3.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.3.0/tt_0.3.0_darwin_amd64.tar.gz"
-      sha256 "7fc95170aa193830e328f0b3713ff35c146d1cf4d6d0c171c5a891a29d4ed5d1"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.4.1/tt_0.4.1_darwin_amd64.tar.gz"
+      sha256 "caa88718ecc07006644daed989cb25374255683a592975da997b0620c3b6f273"
 
       def install
         bin.install "tt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.3.0/tt_0.3.0_darwin_arm64.tar.gz"
-      sha256 "8d84b041efbd49af7412ab22c7c04e45a96c28674557242395f439c06b99a19a"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.4.1/tt_0.4.1_darwin_arm64.tar.gz"
+      sha256 "2f676c9d1ca4b9723b461a61e07efb72c514e8f481697c4ca85618beae11d5b0"
 
       def install
         bin.install "tt"
@@ -29,15 +29,15 @@ class Tt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.3.0/tt_0.3.0_linux_amd64.tar.gz"
-      sha256 "83e69d980f0f541a27666b449ca4b744507dc257a3c08e268046c8fa5f60a103"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.4.1/tt_0.4.1_linux_amd64.tar.gz"
+      sha256 "066930b4f0065d3112f7835b7a6f154cf8b6b3c909da532186d5441e5965a631"
       def install
         bin.install "tt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.3.0/tt_0.3.0_linux_arm64.tar.gz"
-      sha256 "9576e4bab1e6ef8dc8c7fd346de5de3cc9f954844e204fac866c85c99105e59c"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.4.1/tt_0.4.1_linux_arm64.tar.gz"
+      sha256 "6247fe1fd9d74232ce8616038e7a8d3b72c6b7bd0cf823e3c36bf42f8adaca79"
       def install
         bin.install "tt"
       end
