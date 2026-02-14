@@ -5,21 +5,21 @@
 class Bb < Formula
   desc "Browser automation CLI for AI agents"
   homepage "https://github.com/devbydaniel/bb"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devbydaniel/bb/releases/download/v1.0.1/bb_1.0.1_darwin_amd64.tar.gz"
-      sha256 "0cb4be4f982cd4f5ce634b4c72f2205420145e29784d753b7a7bec24d82e2acb"
+      url "https://github.com/devbydaniel/bb/releases/download/v1.0.2/bb_1.0.2_darwin_amd64.tar.gz"
+      sha256 "f18c56aae20e7cccfaba72320f6d61f663fa01e2c19c2242b86f3c0909e8daeb"
 
       def install
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devbydaniel/bb/releases/download/v1.0.1/bb_1.0.1_darwin_arm64.tar.gz"
-      sha256 "618f0b0b98fed997d4815e3e65ef31ef7a507c0d6b5b16dfc496cb15addd6b75"
+      url "https://github.com/devbydaniel/bb/releases/download/v1.0.2/bb_1.0.2_darwin_arm64.tar.gz"
+      sha256 "d556c1a50245fd80058514942ed31ee46dc61be1e2d034460b4cfaf995f5552c"
 
       def install
         bin.install "bb"
@@ -29,15 +29,15 @@ class Bb < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/bb/releases/download/v1.0.1/bb_1.0.1_linux_amd64.tar.gz"
-      sha256 "7cc5efa2001ffa8c0389a262d320019d0178a231002299e920e649918bcd62f5"
+      url "https://github.com/devbydaniel/bb/releases/download/v1.0.2/bb_1.0.2_linux_amd64.tar.gz"
+      sha256 "84238e4549caec1f87a507b48c50e5b6074c852ae28ec6f951941a1363ae9ebc"
       def install
         bin.install "bb"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/bb/releases/download/v1.0.1/bb_1.0.1_linux_arm64.tar.gz"
-      sha256 "6d2a39fd9b04f1e34fdd6d89fc2f3fdad8dfeb6e5331f0bc23a685d38f5931fa"
+      url "https://github.com/devbydaniel/bb/releases/download/v1.0.2/bb_1.0.2_linux_arm64.tar.gz"
+      sha256 "401ba5b0e64bd4ec67febe31352b991ad3571a6bdfc1e106d6bc4900012c1899"
       def install
         bin.install "bb"
       end
