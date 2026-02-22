@@ -5,23 +5,23 @@
 class Tt < Formula
   desc "A CLI & TUI task manager"
   homepage "https://github.com/devbydaniel/tt"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.4.1/tt_0.4.1_darwin_amd64.tar.gz"
-      sha256 "caa88718ecc07006644daed989cb25374255683a592975da997b0620c3b6f273"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.4.2/tt_0.4.2_darwin_amd64.tar.gz"
+      sha256 "20fb9f859c397c83e1484f55d3ea54aea4f66d4a43dc57c0db058266c0136f58"
 
-      def install
+      define_method(:install) do
         bin.install "tt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.4.1/tt_0.4.1_darwin_arm64.tar.gz"
-      sha256 "2f676c9d1ca4b9723b461a61e07efb72c514e8f481697c4ca85618beae11d5b0"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.4.2/tt_0.4.2_darwin_arm64.tar.gz"
+      sha256 "36877148c0e58b54c62713a54e8cb68b1243dcb0f29668ba3227c91b702a64d0"
 
-      def install
+      define_method(:install) do
         bin.install "tt"
       end
     end
@@ -29,16 +29,16 @@ class Tt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.4.1/tt_0.4.1_linux_amd64.tar.gz"
-      sha256 "066930b4f0065d3112f7835b7a6f154cf8b6b3c909da532186d5441e5965a631"
-      def install
+      url "https://github.com/devbydaniel/tt/releases/download/v0.4.2/tt_0.4.2_linux_amd64.tar.gz"
+      sha256 "30962e9e7086964477ec97eccd2107fcd5fb2eadbed43d9ac5fed6c53bd86887"
+      define_method(:install) do
         bin.install "tt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.4.1/tt_0.4.1_linux_arm64.tar.gz"
-      sha256 "6247fe1fd9d74232ce8616038e7a8d3b72c6b7bd0cf823e3c36bf42f8adaca79"
-      def install
+      url "https://github.com/devbydaniel/tt/releases/download/v0.4.2/tt_0.4.2_linux_arm64.tar.gz"
+      sha256 "e6c8e98c8e1d5fac79fefde3a537fbb1b9e8fb01e7c2793e9edac451845de105"
+      define_method(:install) do
         bin.install "tt"
       end
     end
