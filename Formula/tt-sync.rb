@@ -5,21 +5,21 @@
 class TtSync < Formula
   desc "Sync server for tt task manager"
   homepage "https://github.com/devbydaniel/tt"
-  version "0.4.2"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.4.2/tt-sync_0.4.2_darwin_amd64.tar.gz"
-      sha256 "943d095d9244a7d4d5039d3721264663ccf92960401fa35f036c8671963cbffb"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.5.0/tt-sync_0.5.0_darwin_amd64.tar.gz"
+      sha256 "81537272f9421dbf745b68ee5792b79f0760fb4413694373d752c6552e2dc4aa"
 
       define_method(:install) do
         bin.install "tt-sync"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.4.2/tt-sync_0.4.2_darwin_arm64.tar.gz"
-      sha256 "930e3246a9cf10e6bb3e28407953e9db470f8eb3ede17bfcb923452909ecd423"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.5.0/tt-sync_0.5.0_darwin_arm64.tar.gz"
+      sha256 "a54c4aa656ad438cb1174b1179201e16a6a546634e9ba66dd2883066e8af745c"
 
       define_method(:install) do
         bin.install "tt-sync"
@@ -29,15 +29,15 @@ class TtSync < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.4.2/tt-sync_0.4.2_linux_amd64.tar.gz"
-      sha256 "5f4ae0170f5c880fa1e9a8c3a330188d3d5f94d1e9459b1d09f1bc65f9c433f0"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.5.0/tt-sync_0.5.0_linux_amd64.tar.gz"
+      sha256 "f13ea64bcdaf5935b99306cd8dc56dd833879e9d42dbf1dd614244ab89b95e06"
       define_method(:install) do
         bin.install "tt-sync"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.4.2/tt-sync_0.4.2_linux_arm64.tar.gz"
-      sha256 "7f0300d19d885b836fd162ea0a252bb1bb96e1e54c2f8cd35b57da09e73106e7"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.5.0/tt-sync_0.5.0_linux_arm64.tar.gz"
+      sha256 "2e920a563d6b9fdcd56370b868f25f4e5eb2a7f7f571c2a802470c4729038e95"
       define_method(:install) do
         bin.install "tt-sync"
       end
