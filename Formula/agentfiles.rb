@@ -5,21 +5,21 @@
 class Agentfiles < Formula
   desc "A CLI for managing AI agent configuration files"
   homepage "https://github.com/devbydaniel/agentfiles"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devbydaniel/agentfiles/releases/download/v0.7.0/agentfiles_0.7.0_darwin_amd64.tar.gz"
-      sha256 "ec43a34886c43b34fe42af502c2b67d73d0f8d88374d2b8160f0c30c240d3f3d"
+      url "https://github.com/devbydaniel/agentfiles/releases/download/v0.8.0/agentfiles_0.8.0_darwin_amd64.tar.gz"
+      sha256 "71a9077864047961d9e2b1f5d159d5db6b5cf94a4339d54d59c95109195ee1ec"
 
       define_method(:install) do
         bin.install "af"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devbydaniel/agentfiles/releases/download/v0.7.0/agentfiles_0.7.0_darwin_arm64.tar.gz"
-      sha256 "5abc3c25adc568fafa1ddc3711a7ecd4e4bb4cf121f7cf67c7f7a9459c9ec295"
+      url "https://github.com/devbydaniel/agentfiles/releases/download/v0.8.0/agentfiles_0.8.0_darwin_arm64.tar.gz"
+      sha256 "694f08bfb68046f0a7894182f500aaac68c0f6fa86b9180c67b9356c2301c6bd"
 
       define_method(:install) do
         bin.install "af"
@@ -29,15 +29,15 @@ class Agentfiles < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/agentfiles/releases/download/v0.7.0/agentfiles_0.7.0_linux_amd64.tar.gz"
-      sha256 "64673b3203177429fd800ec9d1a5c794fcf99ef1c61663b53e4d600b79b54fce"
+      url "https://github.com/devbydaniel/agentfiles/releases/download/v0.8.0/agentfiles_0.8.0_linux_amd64.tar.gz"
+      sha256 "05ffc2732e442c85008cee337f59fd56d1ea072bdac45a7b3d4d0742b0a6e4d8"
       define_method(:install) do
         bin.install "af"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/agentfiles/releases/download/v0.7.0/agentfiles_0.7.0_linux_arm64.tar.gz"
-      sha256 "4cddaa366faaeb0b5a62855159419f1562813a5a0bcace3c9ccaa96e65c32e84"
+      url "https://github.com/devbydaniel/agentfiles/releases/download/v0.8.0/agentfiles_0.8.0_linux_arm64.tar.gz"
+      sha256 "79f7c6199e56d4c8c5ec99b7f7317ac84df4ae8015fe55745557c4affeb46e86"
       define_method(:install) do
         bin.install "af"
       end
