@@ -5,21 +5,21 @@
 class Tt < Formula
   desc "A CLI & TUI task manager"
   homepage "https://github.com/devbydaniel/tt"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.5.0/tt_0.5.0_darwin_amd64.tar.gz"
-      sha256 "a72e463d186664da4f7eb480b7fdc60ef16ee322afc4184d79fb1f606078ec4b"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.6.0/tt_0.6.0_darwin_amd64.tar.gz"
+      sha256 "9814bb6aaff5ed426e21a48fc86baecda6b413d3ffbb58c4bf48aaccdbfd7305"
 
       define_method(:install) do
         bin.install "tt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.5.0/tt_0.5.0_darwin_arm64.tar.gz"
-      sha256 "33fd82b5c6fec3f3ffaf63270f232e71a56f90b574923c6e646f216ce6f8fb76"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.6.0/tt_0.6.0_darwin_arm64.tar.gz"
+      sha256 "8479375facf640b658552bf0da95590987f58da19107a22f9e8fbb572125e0c3"
 
       define_method(:install) do
         bin.install "tt"
@@ -29,15 +29,15 @@ class Tt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.5.0/tt_0.5.0_linux_amd64.tar.gz"
-      sha256 "7c629c40d8cf1cda395824da3ac778b7058edd6424ef8d1a61192f3afb378264"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.6.0/tt_0.6.0_linux_amd64.tar.gz"
+      sha256 "c2d5a5bcb7eaa8e1d2e2e656c943e0f30e287e3db3f97ddaddae39e7f45a37b3"
       define_method(:install) do
         bin.install "tt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/devbydaniel/tt/releases/download/v0.5.0/tt_0.5.0_linux_arm64.tar.gz"
-      sha256 "49a965a95ad15f7dd86bb4d4cc222ed1fbb3d5426b69d71411c88ab105beef59"
+      url "https://github.com/devbydaniel/tt/releases/download/v0.6.0/tt_0.6.0_linux_arm64.tar.gz"
+      sha256 "a65603e0f99481f5702f49c952ab45bc3df71c3fc344686e09f8ccb44c8b7495"
       define_method(:install) do
         bin.install "tt"
       end
